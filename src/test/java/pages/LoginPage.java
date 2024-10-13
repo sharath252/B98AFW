@@ -28,7 +28,7 @@ public class LoginPage {
 	
 	public void setpassword(String pw)
 	{
-		unTB.sendKeys(pw);
+		pwTB.sendKeys(pw);
 	}
 	
 	public void clickGoButton()
