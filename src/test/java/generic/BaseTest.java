@@ -127,6 +127,10 @@ public abstract class BaseTest implements IAutoConst
 			String msg = testResult.getThrowable().getMessage();
 			test.fail(msg,MediaEntityBuilder.createScreenCaptureFromPath("./screenshots/"+testName+".png").build());
 		}
+		else
+		{
+			test.pass("this Test is PASSED");
+		}
 		Thread.sleep(2000);
 		driver.quit();
 		test.info("Close the browser");
