@@ -98,7 +98,6 @@ public abstract class BaseTest implements IAutoConst
 		
 		
 		
-		
 		driver.get(AppURL);
 		test.info("Enter the URL:"+AppURL);
 		
@@ -113,8 +112,9 @@ public abstract class BaseTest implements IAutoConst
 	}
 	
 	@AfterMethod
-	public void postCondition(ITestResult testResult ) throws Exception
+	public void postCondition(Method method, ITestResult testResult ) throws Exception
 	{
+		String methodName=method.getName();
 		String testName = testResult.getName();
 		int status = testResult.getStatus();
 		
@@ -129,7 +129,7 @@ public abstract class BaseTest implements IAutoConst
 		}
 		else
 		{
-			test.pass("this Test is PASSED");
+			test.pass("Test "+methodName+" is PASSED");
 		}
 		Thread.sleep(2000);
 		driver.quit();

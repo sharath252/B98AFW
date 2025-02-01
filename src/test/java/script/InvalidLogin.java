@@ -7,29 +7,29 @@ import generic.BaseTest;
 import generic.Utility;
 import pages.LoginPage;
 
-public class InvalidLogin extends BaseTest
-
-{
-	@Test(priority=2)
+public class InvalidLogin extends BaseTest{
+	
+	@Test(priority = 2)
 	public void testInvalidLogin()
 	{
+		String un = Utility.getExcelData(XL_PATH, "InvalidLogin",1,0);
+		String pw = Utility.getExcelData(XL_PATH, "InvalidLogin",1,1);
 		
-		String un=Utility.getExcelData(XL_PATH,"InvalidLogin",1,0);
-		String pw=Utility.getExcelData(XL_PATH,"InvalidLogin",1,1);
-		
-		test.info("enter inValid Username");
+		test.info("Enter Invalid username");
 		LoginPage loginPage=new LoginPage(driver);
 		loginPage.setUsername(un);
 		
-		test.info("enter inValid password");
+		test.info("Enter Invalid password");
 		loginPage.setpassword(pw);
 		
-		test.info("click on GoButton");
+		test.info("Click Go Buttton");
 		loginPage.clickGoButton();
 		
-		test.info("verify err msg is displayed");
+		test.info("validation: errMsg is Displayed");
 		boolean result = loginPage.verifyErrMsgIsDisplayed(wait);
-		Assert.assertTrue(result);	
+		Assert.assertTrue(result);
+		
+		
 	}
-	
+
 }

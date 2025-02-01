@@ -5,6 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
 
@@ -21,6 +22,7 @@ public class LoginPage {
 	
 	@FindBy(xpath="//div[@class='error']")
 	private WebElement errMsg;
+	
 	
 	public LoginPage(WebDriver driver) 
 	{
@@ -44,18 +46,19 @@ public class LoginPage {
 	
 	public boolean verifyErrMsgIsDisplayed(WebDriverWait wait)
 	{
-		try 
-		{
+		try {
 			wait.until(ExpectedConditions.visibilityOf(errMsg));
-			
 			Reporter.log("errMsg is Dislpayed:"+errMsg.getText(),true);
 			return true;
 		}
+		
 		catch (Exception e) {
 			e.printStackTrace();
-			Reporter.log("errMsg is NotDislpayed",true);
+			Reporter.log("errMsg is not displayed",true);
 			return false;
 		}
-
+		
 	}
+	
+	
 }
