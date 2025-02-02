@@ -95,9 +95,7 @@ public abstract class BaseTest implements IAutoConst
 				test.info("Open Edge Browser in Local System");
 			}
 		}
-		
-		
-		
+			
 		driver.get(AppURL);
 		test.info("Enter the URL:"+AppURL);
 		
@@ -114,6 +112,7 @@ public abstract class BaseTest implements IAutoConst
 	@AfterMethod
 	public void postCondition(Method method, ITestResult testResult ) throws Exception
 	{
+		
 		String methodName=method.getName();
 		String testName = testResult.getName();
 		int status = testResult.getStatus();
