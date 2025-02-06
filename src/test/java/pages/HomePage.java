@@ -13,6 +13,8 @@ public class HomePage {
 	@FindBy(xpath="//a[text()='Logout']")
 	private WebElement logoutLink;
 	
+	@FindBy(xpath="//a[@title='Customers']/../../li[4]")
+	private WebElement supplierIcon;
 	
 	public HomePage(WebDriver driver)
 	{
@@ -32,5 +34,21 @@ public class HomePage {
 			Reporter.log("Homepage is NotDislpayed",true);
 			return false;
 		}
+	}
+	
+	public boolean VerfiyPositionofSupplier(WebDriverWait wait)
+	{
+		try 
+		{
+			wait.until(ExpectedConditions.visibilityOf(supplierIcon));
+			Reporter.log("Suppliers icon is present as 4th icon",true);
+			return true;
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+			Reporter.log("HSuppliers icon is present as 4th icon",true);
+			return false;
+		}
+		
 	}
 }

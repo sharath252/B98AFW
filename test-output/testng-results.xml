@@ -2,23 +2,29 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[Homepage is Dislpayed]]>
+      <![CDATA[Suppliers icon is present as 4th icon]]>
     </line>
   </reporter-output>
-  <suite started-at="2025-02-01T07:57:05 IST" name="Default suite" finished-at="2025-02-01T07:57:13 IST" duration-ms="7608">
+  <suite started-at="2025-02-06T12:29:34 IST" name="Default suite" finished-at="2025-02-06T12:29:42 IST" duration-ms="7628">
     <groups>
+      <group name="HomePage">
+        <method signature="PositionofSupplier.testPositionofSupplier()[pri:3, instance:script.PositionofSupplier@26794848]" name="testPositionofSupplier" class="script.PositionofSupplier"/>
+      </group> <!-- HomePage -->
+      <group name="smoke">
+        <method signature="PositionofSupplier.testPositionofSupplier()[pri:3, instance:script.PositionofSupplier@26794848]" name="testPositionofSupplier" class="script.PositionofSupplier"/>
+      </group> <!-- smoke -->
     </groups>
-    <test started-at="2025-02-01T07:57:05 IST" name="Default test" finished-at="2025-02-01T07:57:13 IST" duration-ms="7608">
-      <class name="script.ValidLogin">
-        <test-method is-config="true" signature="initReport()[pri:0, instance:script.ValidLogin@26794848]" started-at="2025-02-01T07:57:05 IST" name="initReport" finished-at="2025-02-01T07:57:05 IST" duration-ms="276" status="PASS">
+    <test started-at="2025-02-06T12:29:34 IST" name="Default test" finished-at="2025-02-06T12:29:42 IST" duration-ms="7628">
+      <class name="script.PositionofSupplier">
+        <test-method is-config="true" signature="initReport()[pri:0, instance:script.PositionofSupplier@26794848]" started-at="2025-02-06T12:29:34 IST" name="initReport" finished-at="2025-02-06T12:29:34 IST" duration-ms="285" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initReport -->
-        <test-method is-config="true" signature="preCondition(java.lang.reflect.Method,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:script.ValidLogin@26794848]" started-at="2025-02-01T07:57:05 IST" name="preCondition" finished-at="2025-02-01T07:57:08 IST" duration-ms="2882" status="PASS">
+        <test-method is-config="true" signature="preCondition(java.lang.reflect.Method,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:script.PositionofSupplier@26794848]" started-at="2025-02-06T12:29:34 IST" name="preCondition" finished-at="2025-02-06T12:29:37 IST" duration-ms="3074" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void script.ValidLogin.testValidLogin()]]>
+                <![CDATA[public void script.PositionofSupplier.testPositionofSupplier()]]>
               </value>
             </param>
             <param index="1">
@@ -40,34 +46,34 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preCondition -->
-        <test-method signature="testValidLogin()[pri:1, instance:script.ValidLogin@26794848]" started-at="2025-02-01T07:57:08 IST" name="testValidLogin" finished-at="2025-02-01T07:57:10 IST" duration-ms="2417" status="PASS">
+        <test-method signature="testPositionofSupplier()[pri:3, instance:script.PositionofSupplier@26794848]" started-at="2025-02-06T12:29:37 IST" name="testPositionofSupplier" finished-at="2025-02-06T12:29:39 IST" duration-ms="2296" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Homepage is Dislpayed]]>
+              <![CDATA[Suppliers icon is present as 4th icon]]>
             </line>
           </reporter-output>
-        </test-method> <!-- testValidLogin -->
-        <test-method is-config="true" signature="postCondition(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:script.ValidLogin@26794848]" started-at="2025-02-01T07:57:10 IST" name="postCondition" finished-at="2025-02-01T07:57:13 IST" duration-ms="2271" status="PASS">
+        </test-method> <!-- testPositionofSupplier -->
+        <test-method is-config="true" signature="postCondition(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:script.PositionofSupplier@26794848]" started-at="2025-02-06T12:29:39 IST" name="postCondition" finished-at="2025-02-06T12:29:42 IST" duration-ms="2217" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void script.ValidLogin.testValidLogin()]]>
+                <![CDATA[public void script.PositionofSupplier.testPositionofSupplier()]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[[TestResult name=testValidLogin status=SUCCESS method=ValidLogin.testValidLogin()[pri:1, instance:script.ValidLogin@26794848] output=Homepage is Dislpayed]]]>
+                <![CDATA[[TestResult name=testPositionofSupplier status=SUCCESS method=PositionofSupplier.testPositionofSupplier()[pri:3, instance:script.PositionofSupplier@26794848] output=Suppliers icon is present as 4th icon]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postCondition -->
-        <test-method is-config="true" signature="publishReport()[pri:0, instance:script.ValidLogin@26794848]" started-at="2025-02-01T07:57:13 IST" name="publishReport" finished-at="2025-02-01T07:57:13 IST" duration-ms="648" status="PASS">
+        <test-method is-config="true" signature="publishReport()[pri:0, instance:script.PositionofSupplier@26794848]" started-at="2025-02-06T12:29:42 IST" name="publishReport" finished-at="2025-02-06T12:29:42 IST" duration-ms="696" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- publishReport -->
-      </class> <!-- script.ValidLogin -->
+      </class> <!-- script.PositionofSupplier -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

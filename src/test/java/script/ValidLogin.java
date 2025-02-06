@@ -9,10 +9,10 @@ import generic.Utility;
 import pages.HomePage;
 import pages.LoginPage;
 
-public class ValidLogin extends BaseTest 
+public class ValidLogin extends BaseTest 	
 {
 
-	@Test(priority = 1)
+	@Test(priority = 1, groups= {"smoke","login"})
 	public void testValidLogin() 
 	{
 		String un = Utility.getExcelData(XL_PATH, "ValidLogin",1,0);
