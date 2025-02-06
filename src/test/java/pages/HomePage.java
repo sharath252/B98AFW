@@ -51,4 +51,9 @@ public class HomePage {
 		}
 		
 	}
+	
+	public void clickSuppliers()
+	{
+		supplierIcon.click();
+	}
 }

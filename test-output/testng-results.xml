@@ -2,29 +2,29 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[Suppliers icon is present as 4th icon]]>
+      <![CDATA[Appilcation is in Supplier Page]]>
     </line>
   </reporter-output>
-  <suite started-at="2025-02-06T12:29:34 IST" name="Default suite" finished-at="2025-02-06T12:29:42 IST" duration-ms="7628">
+  <suite started-at="2025-02-06T12:55:09 IST" name="Default suite" finished-at="2025-02-06T12:55:21 IST" duration-ms="11672">
     <groups>
-      <group name="HomePage">
-        <method signature="PositionofSupplier.testPositionofSupplier()[pri:3, instance:script.PositionofSupplier@26794848]" name="testPositionofSupplier" class="script.PositionofSupplier"/>
-      </group> <!-- HomePage -->
       <group name="smoke">
-        <method signature="PositionofSupplier.testPositionofSupplier()[pri:3, instance:script.PositionofSupplier@26794848]" name="testPositionofSupplier" class="script.PositionofSupplier"/>
+        <method signature="VerifySupplierPage.testVerifySupplierPage()[pri:4, instance:script.VerifySupplierPage@26794848]" name="testVerifySupplierPage" class="script.VerifySupplierPage"/>
       </group> <!-- smoke -->
+      <group name="Supplierpage">
+        <method signature="VerifySupplierPage.testVerifySupplierPage()[pri:4, instance:script.VerifySupplierPage@26794848]" name="testVerifySupplierPage" class="script.VerifySupplierPage"/>
+      </group> <!-- Supplierpage -->
     </groups>
-    <test started-at="2025-02-06T12:29:34 IST" name="Default test" finished-at="2025-02-06T12:29:42 IST" duration-ms="7628">
-      <class name="script.PositionofSupplier">
-        <test-method is-config="true" signature="initReport()[pri:0, instance:script.PositionofSupplier@26794848]" started-at="2025-02-06T12:29:34 IST" name="initReport" finished-at="2025-02-06T12:29:34 IST" duration-ms="285" status="PASS">
+    <test started-at="2025-02-06T12:55:09 IST" name="Default test" finished-at="2025-02-06T12:55:21 IST" duration-ms="11672">
+      <class name="script.VerifySupplierPage">
+        <test-method is-config="true" signature="initReport()[pri:0, instance:script.VerifySupplierPage@26794848]" started-at="2025-02-06T12:55:09 IST" name="initReport" finished-at="2025-02-06T12:55:09 IST" duration-ms="730" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initReport -->
-        <test-method is-config="true" signature="preCondition(java.lang.reflect.Method,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:script.PositionofSupplier@26794848]" started-at="2025-02-06T12:29:34 IST" name="preCondition" finished-at="2025-02-06T12:29:37 IST" duration-ms="3074" status="PASS">
+        <test-method is-config="true" signature="preCondition(java.lang.reflect.Method,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:script.VerifySupplierPage@26794848]" started-at="2025-02-06T12:55:10 IST" name="preCondition" finished-at="2025-02-06T12:55:15 IST" duration-ms="5035" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void script.PositionofSupplier.testPositionofSupplier()]]>
+                <![CDATA[public void script.VerifySupplierPage.testVerifySupplierPage()]]>
               </value>
             </param>
             <param index="1">
@@ -46,34 +46,34 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preCondition -->
-        <test-method signature="testPositionofSupplier()[pri:3, instance:script.PositionofSupplier@26794848]" started-at="2025-02-06T12:29:37 IST" name="testPositionofSupplier" finished-at="2025-02-06T12:29:39 IST" duration-ms="2296" status="PASS">
+        <test-method signature="testVerifySupplierPage()[pri:4, instance:script.VerifySupplierPage@26794848]" started-at="2025-02-06T12:55:15 IST" name="testVerifySupplierPage" finished-at="2025-02-06T12:55:19 IST" duration-ms="4161" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Suppliers icon is present as 4th icon]]>
+              <![CDATA[Appilcation is in Supplier Page]]>
             </line>
           </reporter-output>
-        </test-method> <!-- testPositionofSupplier -->
-        <test-method is-config="true" signature="postCondition(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:script.PositionofSupplier@26794848]" started-at="2025-02-06T12:29:39 IST" name="postCondition" finished-at="2025-02-06T12:29:42 IST" duration-ms="2217" status="PASS">
+        </test-method> <!-- testVerifySupplierPage -->
+        <test-method is-config="true" signature="postCondition(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:script.VerifySupplierPage@26794848]" started-at="2025-02-06T12:55:19 IST" name="postCondition" finished-at="2025-02-06T12:55:21 IST" duration-ms="2377" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void script.PositionofSupplier.testPositionofSupplier()]]>
+                <![CDATA[public void script.VerifySupplierPage.testVerifySupplierPage()]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[[TestResult name=testPositionofSupplier status=SUCCESS method=PositionofSupplier.testPositionofSupplier()[pri:3, instance:script.PositionofSupplier@26794848] output=Suppliers icon is present as 4th icon]]]>
+                <![CDATA[[TestResult name=testVerifySupplierPage status=SUCCESS method=VerifySupplierPage.testVerifySupplierPage()[pri:4, instance:script.VerifySupplierPage@26794848] output=Appilcation is in Supplier Page]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postCondition -->
-        <test-method is-config="true" signature="publishReport()[pri:0, instance:script.PositionofSupplier@26794848]" started-at="2025-02-06T12:29:42 IST" name="publishReport" finished-at="2025-02-06T12:29:42 IST" duration-ms="696" status="PASS">
+        <test-method is-config="true" signature="publishReport()[pri:0, instance:script.VerifySupplierPage@26794848]" started-at="2025-02-06T12:55:21 IST" name="publishReport" finished-at="2025-02-06T12:55:22 IST" duration-ms="980" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- publishReport -->
-      </class> <!-- script.PositionofSupplier -->
+      </class> <!-- script.VerifySupplierPage -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
