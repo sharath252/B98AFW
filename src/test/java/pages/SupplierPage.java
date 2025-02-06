@@ -1,5 +1,6 @@
 package pages;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -15,22 +16,27 @@ public class SupplierPage {
 	@FindBy(xpath="//span[@class='glyphicon glyphicon-user']")
 	private WebElement newsuppliericon;
 	
-	@FindBy(xpath="//label[text()='Company Name']")
+	@FindBy(id="company_name_input")	
 	private WebElement companyName;
 	
-	@FindBy(xpath="//label[text()='First Name']")
+	@FindBy(id="first_name")
 	private WebElement firstName;
 	
-	@FindBy(xpath="//label[text()='Last Name']")
+	@FindBy(id="last_name")
 	private WebElement lastName;
 	
 	@FindBy(id="submit")
 	private WebElement submitButton;
 	
 	
-	@FindBy(xpath="//td[text()='Parle']")
-	private WebElement parle;
+	@FindBy(xpath="//span[@data-notify='message']")
+	private WebElement toastMessage;
 	
+	@FindBy(xpath=" //input[@data-index='3']")
+	private WebElement parleCheckBox;
+	
+	@FindBy(id="delete")
+	private WebElement delete;
 	
 	
 	public SupplierPage(WebDriver driver)
@@ -95,14 +101,41 @@ public class SupplierPage {
 	public boolean verifySupplierParleIsCreated(WebDriverWait wait)
 	{
 		try {
-			wait.until(ExpectedConditions.visibilityOf(parle));
-			Reporter.log("Supplier parle is created",true);
+			wait.until(ExpectedConditions.visibilityOf(toastMessage));
+			Reporter.log(toastMessage.getText(),true);
 			return true;
 		}
 		catch(Exception e)
 		{
 			e.printStackTrace();
-			Reporter.log("Supplier parle is created",true);
+			Reporter.log("Supplier parle is not created",true);
+			return false;
+		}
+	}
+	
+	public void selectParleCheckBox()
+	{
+		parleCheckBox.click();
+	}
+	
+	public void deleteSupplier(WebDriver driver)
+	{
+		delete.click();
+		Alert alert = driver.switchTo().alert();
+		alert.accept();
+	}
+	
+	public boolean verifySupplierParleIsDeleted(WebDriverWait wait)
+	{
+		try {
+			wait.until(ExpectedConditions.visibilityOf(toastMessage));
+			Reporter.log(toastMessage.getText(),true);
+			return true;
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+			Reporter.log("Supplier parle is not created",true);
 			return false;
 		}
 	}

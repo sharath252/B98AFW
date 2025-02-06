@@ -1,27 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[You have successfully deleted 1 Supplier(s)]]>
+    </line>
   </reporter-output>
-  <suite started-at="2025-02-06T14:07:11 IST" name="Default suite" finished-at="2025-02-06T14:07:20 IST" duration-ms="8822">
+  <suite started-at="2025-02-06T20:23:32 IST" name="Default suite" finished-at="2025-02-06T20:23:41 IST" duration-ms="8946">
     <groups>
       <group name="SupplierPage">
-        <method signature="CreateNewSupplier.testCreateNewSupplier()[pri:5, instance:script.CreateNewSupplier@26794848]" name="testCreateNewSupplier" class="script.CreateNewSupplier"/>
+        <method signature="DeleteASupplier.testDeleteASupplier()[pri:6, instance:script.DeleteASupplier@26794848]" name="testDeleteASupplier" class="script.DeleteASupplier"/>
       </group> <!-- SupplierPage -->
       <group name="smoke">
-        <method signature="CreateNewSupplier.testCreateNewSupplier()[pri:5, instance:script.CreateNewSupplier@26794848]" name="testCreateNewSupplier" class="script.CreateNewSupplier"/>
+        <method signature="DeleteASupplier.testDeleteASupplier()[pri:6, instance:script.DeleteASupplier@26794848]" name="testDeleteASupplier" class="script.DeleteASupplier"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2025-02-06T14:07:11 IST" name="Default test" finished-at="2025-02-06T14:07:20 IST" duration-ms="8822">
-      <class name="script.CreateNewSupplier">
-        <test-method is-config="true" signature="initReport()[pri:0, instance:script.CreateNewSupplier@26794848]" started-at="2025-02-06T14:07:11 IST" name="initReport" finished-at="2025-02-06T14:07:11 IST" duration-ms="283" status="PASS">
+    <test started-at="2025-02-06T20:23:32 IST" name="Default test" finished-at="2025-02-06T20:23:41 IST" duration-ms="8946">
+      <class name="script.DeleteASupplier">
+        <test-method is-config="true" signature="initReport()[pri:0, instance:script.DeleteASupplier@26794848]" started-at="2025-02-06T20:23:32 IST" name="initReport" finished-at="2025-02-06T20:23:32 IST" duration-ms="304" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initReport -->
-        <test-method is-config="true" signature="preCondition(java.lang.reflect.Method,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:script.CreateNewSupplier@26794848]" started-at="2025-02-06T14:07:11 IST" name="preCondition" finished-at="2025-02-06T14:07:14 IST" duration-ms="2516" status="PASS">
+        <test-method is-config="true" signature="preCondition(java.lang.reflect.Method,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:script.DeleteASupplier@26794848]" started-at="2025-02-06T20:23:32 IST" name="preCondition" finished-at="2025-02-06T20:23:35 IST" duration-ms="2714" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void script.CreateNewSupplier.testCreateNewSupplier()]]>
+                <![CDATA[public void script.DeleteASupplier.testDeleteASupplier()]]>
               </value>
             </param>
             <param index="1">
@@ -43,100 +46,34 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preCondition -->
-        <test-method signature="testCreateNewSupplier()[pri:5, instance:script.CreateNewSupplier@26794848]" started-at="2025-02-06T14:07:14 IST" name="testCreateNewSupplier" finished-at="2025-02-06T14:07:18 IST" duration-ms="3630" status="FAIL">
-          <exception class="org.openqa.selenium.ElementNotInteractableException">
-            <message>
-              <![CDATA[element not interactable
-  (Session info: chrome=132.0.6834.111)
-Build info: version: '4.25.0', revision: '8a8aea2337'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [250f74b92a675bf2e49f83cbde85afac, sendKeysToElement {value=[Ljava.lang.CharSequence;@4f5f6e45, id=f.F225804B1D2E9726662DE2AD5CEBEBDE.d.E6D422B114F1600EEEA0E231DDF324C8.e.140}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.111, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\SHARAT~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65051}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65051/devtoo..., se:cdpVersion: 132.0.6834.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (250f74b92a675bf2e49f83cbde85afac)] -> xpath: //label[text()='Company Name']]
-Session ID: 250f74b92a675bf2e49f83cbde85afac]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=132.0.6834.111)
-Build info: version: '4.25.0', revision: '8a8aea2337'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [250f74b92a675bf2e49f83cbde85afac, sendKeysToElement {value=[Ljava.lang.CharSequence;@4f5f6e45, id=f.F225804B1D2E9726662DE2AD5CEBEBDE.d.E6D422B114F1600EEEA0E231DDF324C8.e.140}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.111, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\SHARAT~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65051}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65051/devtoo..., se:cdpVersion: 132.0.6834.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (250f74b92a675bf2e49f83cbde85afac)] -> xpath: //label[text()='Company Name']]
-Session ID: 250f74b92a675bf2e49f83cbde85afac
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy18.sendKeys(Unknown Source)
-at pages.SupplierPage.setCompanyName(SupplierPage.java:77)
-at script.CreateNewSupplier.testCreateNewSupplier(CreateNewSupplier.java:51)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+        <test-method signature="testDeleteASupplier()[pri:6, instance:script.DeleteASupplier@26794848]" started-at="2025-02-06T20:23:35 IST" name="testDeleteASupplier" finished-at="2025-02-06T20:23:39 IST" duration-ms="3857" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[You have successfully deleted 1 Supplier(s)]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- testCreateNewSupplier -->
-        <test-method is-config="true" signature="postCondition(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:script.CreateNewSupplier@26794848]" started-at="2025-02-06T14:07:18 IST" name="postCondition" finished-at="2025-02-06T14:07:20 IST" duration-ms="2634" status="PASS">
+        </test-method> <!-- testDeleteASupplier -->
+        <test-method is-config="true" signature="postCondition(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:script.DeleteASupplier@26794848]" started-at="2025-02-06T20:23:39 IST" name="postCondition" finished-at="2025-02-06T20:23:41 IST" duration-ms="2339" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void script.CreateNewSupplier.testCreateNewSupplier()]]>
+                <![CDATA[public void script.DeleteASupplier.testDeleteASupplier()]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[[TestResult name=testCreateNewSupplier status=FAILURE method=CreateNewSupplier.testCreateNewSupplier()[pri:5, instance:script.CreateNewSupplier@26794848] output={null}]]]>
+                <![CDATA[[TestResult name=testDeleteASupplier status=SUCCESS method=DeleteASupplier.testDeleteASupplier()[pri:6, instance:script.DeleteASupplier@26794848] output=You have successfully deleted 1 Supplier(s)]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postCondition -->
-        <test-method is-config="true" signature="publishReport()[pri:0, instance:script.CreateNewSupplier@26794848]" started-at="2025-02-06T14:07:20 IST" name="publishReport" finished-at="2025-02-06T14:07:21 IST" duration-ms="657" status="PASS">
+        <test-method is-config="true" signature="publishReport()[pri:0, instance:script.DeleteASupplier@26794848]" started-at="2025-02-06T20:23:41 IST" name="publishReport" finished-at="2025-02-06T20:23:42 IST" duration-ms="651" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- publishReport -->
-      </class> <!-- script.CreateNewSupplier -->
+      </class> <!-- script.DeleteASupplier -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

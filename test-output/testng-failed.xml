@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="script.CreateNewSupplier">
+      <class name="script.DeleteASupplier">
         <methods>
           <include name="postCondition"/>
           <include name="initReport"/>
+          <include name="testDeleteASupplier"/>
           <include name="publishReport"/>
           <include name="preCondition"/>
-          <include name="testCreateNewSupplier"/>
         </methods>
-      </class> <!-- script.CreateNewSupplier -->
+      </class> <!-- script.DeleteASupplier -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

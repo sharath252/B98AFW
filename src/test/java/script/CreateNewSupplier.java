@@ -47,16 +47,16 @@ public class CreateNewSupplier extends BaseTest {
 //		supplierpage.verifyNewSupplierPageisDisplayed(wait);
 		
 //		7. enter  companyname: parle
-		test.info("enter  companyname");
+		test.info("enter companyname");
 		supplierpage.setCompanyName(CN);
 		
 		
 //		8. enter  FirstName: Bhanu
-		test.info("enter  FirstName");
+		test.info("enter FirstName");
 		supplierpage.setFirstName(FN);
 		
 //		9. enter  lastName: Prakash
-		test.info("enter  lastName");
+		test.info("enter lastName");
 		supplierpage.setlastName(LN);
 		
 		
@@ -65,7 +65,7 @@ public class CreateNewSupplier extends BaseTest {
 		supplierpage.clickSubmitButton();
 		
 //		11 verify: new Supplier parle is displayed 
-		supplierpage.verifyNewSupplierPageisDisplayed(wait);
+		supplierpage.verifySupplierParleIsCreated(wait);
 		
 		
 		
