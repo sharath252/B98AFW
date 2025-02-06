@@ -96,10 +96,10 @@ public class SupplierPage {
 	{
 		lastName.sendKeys(LN);	
 	}
-	public void selectCategory(int index)
+	public void selectCategory(String index)
 	{
 		Select select=new Select(category);
-		select.selectByIndex(index);
+		select.selectByVisibleText(index);;
 	}
 	public void clickSubmitButton()
 	{

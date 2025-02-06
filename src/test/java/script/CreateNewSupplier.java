@@ -53,7 +53,7 @@ public class CreateNewSupplier extends BaseTest {
 		
 //		8. select category: (0) Goods Supplier
 		test.info("select category: (0) Goods Supplier");
-		supplierpage.setCompanyName(CG);
+		supplierpage.selectCategory(CG);
 		
 //		9. enter  FirstName: Bhanu
 		test.info("enter FirstName");
@@ -69,7 +69,8 @@ public class CreateNewSupplier extends BaseTest {
 		supplierpage.clickSubmitButton();
 		
 //		12 verify: new Supplier parle is displayed 
-		supplierpage.verifySupplierParleIsCreated(wait);
+		boolean result = supplierpage.verifySupplierParleIsCreated(wait);
+		Assert.assertTrue(result);
 		
 		
 		
