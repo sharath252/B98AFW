@@ -17,8 +17,9 @@ public class CreateNewSupplier extends BaseTest {
 		String un = Utility.getExcelData(XL_PATH, "CreateNewSupplier",1,0);
 		String pw = Utility.getExcelData(XL_PATH, "CreateNewSupplier",1,1);
 		String CN = Utility.getExcelData(XL_PATH, "CreateNewSupplier",1,2);
-		String FN = Utility.getExcelData(XL_PATH, "CreateNewSupplier",1,3);
-		String LN = Utility.getExcelData(XL_PATH, "CreateNewSupplier",1,4);
+		String CG = Utility.getExcelData(XL_PATH, "CreateNewSupplier",1,3);
+		String FN = Utility.getExcelData(XL_PATH, "CreateNewSupplier",1,4);
+		String LN = Utility.getExcelData(XL_PATH, "CreateNewSupplier",1,5);
 		
 //		1. enter valid username: admin
 		test.info("enter valid username");
@@ -50,21 +51,24 @@ public class CreateNewSupplier extends BaseTest {
 		test.info("enter companyname");
 		supplierpage.setCompanyName(CN);
 		
+//		8. select category: (0) Goods Supplier
+		test.info("select category: (0) Goods Supplier");
+		supplierpage.setCompanyName(CG);
 		
-//		8. enter  FirstName: Bhanu
+//		9. enter  FirstName: Bhanu
 		test.info("enter FirstName");
 		supplierpage.setFirstName(FN);
 		
-//		9. enter  lastName: Prakash
+//		10. enter  lastName: Prakash
 		test.info("enter lastName");
 		supplierpage.setlastName(LN);
 		
 		
-//		10. click on submit button
+//		11. click on submit button
 		test.info("click on submit button");
 		supplierpage.clickSubmitButton();
 		
-//		11 verify: new Supplier parle is displayed 
+//		12 verify: new Supplier parle is displayed 
 		supplierpage.verifySupplierParleIsCreated(wait);
 		
 		

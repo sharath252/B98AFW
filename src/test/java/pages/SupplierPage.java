@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
 
@@ -18,6 +19,9 @@ public class SupplierPage {
 	
 	@FindBy(id="company_name_input")	
 	private WebElement companyName;
+	
+	@FindBy(name="category")
+	private WebElement category;
 	
 	@FindBy(id="first_name")
 	private WebElement firstName;
@@ -92,7 +96,11 @@ public class SupplierPage {
 	{
 		lastName.sendKeys(LN);	
 	}
-	
+	public void selectCategory(int index)
+	{
+		Select select=new Select(category);
+		select.selectByIndex(index);
+	}
 	public void clickSubmitButton()
 	{
 		submitButton.click();
