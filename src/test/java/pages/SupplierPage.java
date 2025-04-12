@@ -1,6 +1,9 @@
 package pages;
 
+import java.util.List;
+
 import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -147,4 +150,24 @@ public class SupplierPage {
 			return false;
 		}
 	}
+	
+	public  boolean verifyElementsPresence(WebDriver driver, List<String> xpaths) {
+        boolean allElementsPresent = true;
+       
+        for (String xpath : xpaths) {
+            try {
+                WebElement element = driver.findElement(By.xpath(xpath));
+                if (element.isDisplayed()) {
+                    System.out.println("Element found: " + xpath);
+                } else {
+                    System.out.println("Element not visible: " + xpath);
+                    allElementsPresent = false;
+                }
+            } catch (Exception e) {
+                System.out.println("Element not found: " + xpath);
+                allElementsPresent = false;
+            }
+        }
+        return allElementsPresent;
+    }
 }
