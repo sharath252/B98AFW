@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-14T13:24:37 IST" name="Default suite" finished-at="2025-04-14T13:24:50 IST" duration-ms="13411">
+  <suite started-at="2025-04-14T14:04:52 IST" name="Default suite" finished-at="2025-04-14T14:05:02 IST" duration-ms="10067">
     <groups>
     </groups>
-    <test started-at="2025-04-14T13:24:37 IST" name="Default test" finished-at="2025-04-14T13:24:50 IST" duration-ms="13411">
-      <class name="script.VerifyFieldsDisplayedInUpdateSupplier">
-        <test-method is-config="true" signature="initReport()[pri:0, instance:script.VerifyFieldsDisplayedInUpdateSupplier@5542c4ed]" started-at="2025-04-14T13:24:37 IST" name="initReport" finished-at="2025-04-14T13:24:37 IST" duration-ms="413" status="PASS">
+    <test started-at="2025-04-14T14:04:52 IST" name="Default test" finished-at="2025-04-14T14:05:02 IST" duration-ms="10067">
+      <class name="script.VerfiyAllIconsInHomePage">
+        <test-method is-config="true" signature="initReport()[pri:0, instance:script.VerfiyAllIconsInHomePage@5542c4ed]" started-at="2025-04-14T14:04:51 IST" name="initReport" finished-at="2025-04-14T14:04:51 IST" duration-ms="313" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initReport -->
-        <test-method is-config="true" signature="preCondition(java.lang.reflect.Method,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:script.VerifyFieldsDisplayedInUpdateSupplier@5542c4ed]" started-at="2025-04-14T13:24:37 IST" name="preCondition" finished-at="2025-04-14T13:24:42 IST" duration-ms="4741" status="PASS">
+        <test-method is-config="true" signature="preCondition(java.lang.reflect.Method,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:script.VerfiyAllIconsInHomePage@5542c4ed]" started-at="2025-04-14T14:04:52 IST" name="preCondition" finished-at="2025-04-14T14:04:57 IST" duration-ms="4991" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void script.VerifyFieldsDisplayedInUpdateSupplier.testVerifyFieldsDisplayedInUpdateSupplier()]]>
+                <![CDATA[public void script.VerfiyAllIconsInHomePage.testVerfiyAllIconsInHomePage()]]>
               </value>
             </param>
             <param index="1">
@@ -37,31 +37,31 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preCondition -->
-        <test-method signature="testVerifyFieldsDisplayedInUpdateSupplier()[pri:0, instance:script.VerifyFieldsDisplayedInUpdateSupplier@5542c4ed]" started-at="2025-04-14T13:24:42 IST" name="testVerifyFieldsDisplayedInUpdateSupplier" finished-at="2025-04-14T13:24:48 IST" duration-ms="5978" status="PASS">
+        <test-method signature="testVerfiyAllIconsInHomePage()[pri:3, instance:script.VerfiyAllIconsInHomePage@5542c4ed]" started-at="2025-04-14T14:04:57 IST" name="testVerfiyAllIconsInHomePage" finished-at="2025-04-14T14:04:59 IST" duration-ms="2561" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testVerifyFieldsDisplayedInUpdateSupplier -->
-        <test-method is-config="true" signature="postCondition(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:script.VerifyFieldsDisplayedInUpdateSupplier@5542c4ed]" started-at="2025-04-14T13:24:48 IST" name="postCondition" finished-at="2025-04-14T13:24:50 IST" duration-ms="2615" status="PASS">
+        </test-method> <!-- testVerfiyAllIconsInHomePage -->
+        <test-method is-config="true" signature="postCondition(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:script.VerfiyAllIconsInHomePage@5542c4ed]" started-at="2025-04-14T14:04:59 IST" name="postCondition" finished-at="2025-04-14T14:05:02 IST" duration-ms="2470" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void script.VerifyFieldsDisplayedInUpdateSupplier.testVerifyFieldsDisplayedInUpdateSupplier()]]>
+                <![CDATA[public void script.VerfiyAllIconsInHomePage.testVerfiyAllIconsInHomePage()]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[[TestResult name=testVerifyFieldsDisplayedInUpdateSupplier status=SUCCESS method=VerifyFieldsDisplayedInUpdateSupplier.testVerifyFieldsDisplayedInUpdateSupplier()[pri:0, instance:script.VerifyFieldsDisplayedInUpdateSupplier@5542c4ed] output={null}]]]>
+                <![CDATA[[TestResult name=testVerfiyAllIconsInHomePage status=SUCCESS method=VerfiyAllIconsInHomePage.testVerfiyAllIconsInHomePage()[pri:3, instance:script.VerfiyAllIconsInHomePage@5542c4ed] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postCondition -->
-        <test-method is-config="true" signature="publishReport()[pri:0, instance:script.VerifyFieldsDisplayedInUpdateSupplier@5542c4ed]" started-at="2025-04-14T13:24:51 IST" name="publishReport" finished-at="2025-04-14T13:24:51 IST" duration-ms="777" status="PASS">
+        <test-method is-config="true" signature="publishReport()[pri:0, instance:script.VerfiyAllIconsInHomePage@5542c4ed]" started-at="2025-04-14T14:05:02 IST" name="publishReport" finished-at="2025-04-14T14:05:02 IST" duration-ms="578" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- publishReport -->
-      </class> <!-- script.VerifyFieldsDisplayedInUpdateSupplier -->
+      </class> <!-- script.VerfiyAllIconsInHomePage -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
