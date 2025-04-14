@@ -24,27 +24,43 @@ public class Demo2 implements IAutoConst {
 		driver.findElement(By.name("login-button")).click();
 		
 		driver.findElement(By.xpath(" //a[text()='Suppliers']" )).click();
+		driver.findElement(By.xpath("//span[@class='glyphicon glyphicon-edit']")).click();
 		
 		
-		String id = "//div[text()='ID']";
-		String companyName="//div[text()='Company Name']";
-		String agencyName="//div[text()='Agency Name']";
-		String category="//div[text()='Category']";
-		String lastName="//div[text()='Last Name']";
-		String firstName="//div[text()='First Name']";
-		String eMail="//div[text()='Email']";
-		String phoneNumber="//div[text()='Phone Number']";
+		String companyName = "//label[text()='Company Name']";
+		String category="//label[text()='Category']";
+		String agencyName="//label[text()='Agency Name']";
+		String firstName="//label[text()='First Name']";
+		String lastName="//label[text()='Last Name']";
+		String gender="//label[text()='Gender']";
+		String eMail="//label[text()='Email']";
+		String phoneNumber="//label[text()='Phone Number']";
+		String address1="//label[text()='Address 1']";
+		String address2="//label[text()='Address 2']";
+		String city="//label[text()='City']";
+		String state="//label[text()='State']";
+		String postalCode="//label[text()='Postal Code']";
+		String country="//label[text()='Country']";
+		String Comments="//label[text()='Comments']";
 		
 		List<String> xpaths=new ArrayList<String>();
-		xpaths.add(id);
 		xpaths.add(companyName);
 		xpaths.add(agencyName);
 		xpaths.add(category);
+		xpaths.add(firstName);
 		xpaths.add(lastName);
-		xpaths.add(firstName);
-		xpaths.add(firstName);
+		xpaths.add(gender);
 		xpaths.add(eMail);
 		xpaths.add(phoneNumber);
+		xpaths.add(address1);
+		xpaths.add(address2);
+		xpaths.add(city);
+		xpaths.add(state);
+		xpaths.add(postalCode);
+		xpaths.add(country);
+		xpaths.add(Comments);
+		
+		
 		System.out.println(xpaths);
 		
 //		public static boolean verifyElementsPresence(WebDriver driver, List<String> xpaths) {

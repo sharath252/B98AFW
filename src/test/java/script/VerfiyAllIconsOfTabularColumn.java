@@ -33,7 +33,9 @@ public class VerfiyAllIconsOfTabularColumn extends BaseTest {
 		test.info("click on go button");
 		loginPage.clickGoButton();
 		
+//		4.click on supplier icon
 		HomePage homePage=new HomePage(driver);
+		test.info("click on supplier ICon");
 		homePage.clickSuppliers();
 		
 		String id = "//div[text()='ID']";
@@ -57,7 +59,9 @@ public class VerfiyAllIconsOfTabularColumn extends BaseTest {
 		xpaths.add(phoneNumber);
 		System.out.println(xpaths);
 		
+//		5.verify all the elements present in Supplier page
 		SupplierPage supplierPage=new SupplierPage(driver);
+		test.info("verify Elements in the Supplier page");
 		boolean result = supplierPage.verifyElementsPresence(driver, xpaths);
 		Assert.assertTrue(result);
 	}

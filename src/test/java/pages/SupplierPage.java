@@ -45,6 +45,12 @@ public class SupplierPage {
 	@FindBy(id="delete")
 	private WebElement delete;
 	
+	@FindBy(xpath="//span[@class='glyphicon glyphicon-edit']")
+	private WebElement supplierUpdateIcon;
+	
+	@FindBy(xpath="//div[text()='Update Supplier']")
+	private WebElement updateSupplier;
+	
 	
 	public SupplierPage(WebDriver driver)
 	{
@@ -170,4 +176,41 @@ public class SupplierPage {
         }
         return allElementsPresent;
     }
+	
+	public void clickUpdateSupplierIcon()
+	{
+		supplierUpdateIcon.click();
+	}
+	
+	public boolean verifyUpdateSuppilerIsDisplayed(WebDriverWait wait) {
+		try {
+			wait.until(ExpectedConditions.visibilityOf(updateSupplier));
+			Reporter.log("Update Supplier page is displayed",true);
+			return true;
+		} catch (Exception e) {
+			e.printStackTrace();
+			Reporter.log("Update Supplier page is  not displayed",true);
+			return false;
+		}
+	}
+	public  boolean verifyFieldsDisplayedInUpdateSupplier(WebDriver driver, List<String> xpaths) {
+        boolean allElementsPresent = true;
+       
+        for (String xpath : xpaths) {
+            try {
+                WebElement element = driver.findElement(By.xpath(xpath));
+                if (element.isDisplayed()) {
+                    System.out.println("Element found: " + xpath);
+                } else {
+                    System.out.println("Element not visible: " + xpath);
+                    allElementsPresent = false;
+                }
+            } catch (Exception e) {
+                System.out.println("Element not found: " + xpath);
+                allElementsPresent = false;
+            }
+        }
+        return allElementsPresent;
+    }
+	
 }
