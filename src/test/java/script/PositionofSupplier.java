@@ -10,7 +10,7 @@ import pages.LoginPage;
 
 public class PositionofSupplier extends BaseTest {
 	
-	@Test(priority = 3, groups= {"smoke","HomePage"})
+	@Test(priority = 4, groups= {"smoke","HomePage"})
 	public void testPositionofSupplier() 
 	{
 		String un = Utility.getExcelData(XL_PATH, "PositionofSupplier",1,0);
